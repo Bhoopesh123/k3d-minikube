@@ -81,8 +81,8 @@ https://linux.how2shout.com/install-brew-on-ubuntu-22-04-lts-jammy-linux/
 # 7. Run one test pod in default namespace
     kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
 
-# 8. Install Helm:
-brew install helm
+# 8. Install Helm:  
+    brew install helm
 
 # 9. Just in case if you want to delete the minikube k3d cluster completely
     k3d cluster delete mycluster
