@@ -50,38 +50,39 @@ Follow the below steps to add your userid to docker group
 
 Exit the ubuntu app machine and come back
 
-# install k3d on ubuntu 22.04:
+# install k3d on ubuntu:
+Reference Documentation is as below:
 https://k3d.io/v5.5.1/
 
-wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
-curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+Run the below commads:
+    wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+    curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
-k3d cluster create mycluster
-kubectl get nodes
-kubectl cluster-info
-
-# Just in case if you want to delete the cluste
-k3d cluster delete mycluster
-k3d cluster delete -a
-
+    k3d cluster create mycluster
+    kubectl get nodes
+    kubectl cluster-info
 
 # Install Brew:
+Reference Documentation is as below:
 https://linux.how2shout.com/install-brew-on-ubuntu-22-04-lts-jammy-linux/
 
-sudo apt update
-sudo apt install build-essential git
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/bhoopesh/.bashrc
-brew --help
-
+    sudo apt update
+    sudo apt install build-essential git
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/bhoopesh/.bashrc
+    brew --help
 
 # Install Kubectl:
-brew install kubectl
-kubectl version --client
-kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
+    brew install kubectl
+    kubectl version --client
+    
+# Run one test pod in default namespace
+    kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
 
 # Install Helm:
 brew install helm
 
-
+# Just in case if you want to delete the minikube k3d cluster completely
+    k3d cluster delete mycluster
+    k3d cluster delete -a
 
