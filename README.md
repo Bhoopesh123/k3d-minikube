@@ -49,9 +49,9 @@ Follow the below steps to add your userid to docker group
     sudo usermod -aG docker ${USER}
     sudo chown root:docker /var/run/docker.sock
 
-Exit the ubuntu app machine and come back
+Exit the Ubuntu app machine and come back
 
-# 4. Install k3d on ubuntu:
+# 4. Install k3d on Ubuntu:
 Reference Documentation is as below:
 https://k3d.io/v5.5.1/
 
