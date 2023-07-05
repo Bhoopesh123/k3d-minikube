@@ -1,14 +1,14 @@
 # k3d-minikube
 Below Steps will help to create a k3d minikube cluster on a windows machine.
 
-# Install and configure Ubuntu:
+# 1. Install and configure Ubuntu:
 Open powershell with Admin:  
 
     wsl --install
 
-# Install Ubuntu App from Microsoft Store:
+# 2. Install Ubuntu App from Microsoft Store:
 
-# Install docker on ubuntu:
+# 3. Install docker on ubuntu:
 Reference Documentation is as below:
 https://docs.docker.com/engine/install/ubuntu/
 
@@ -51,7 +51,7 @@ Follow the below steps to add your userid to docker group
 
 Exit the ubuntu app machine and come back
 
-# install k3d on ubuntu:
+# 4. Install k3d on ubuntu:
 Reference Documentation is as below:
 https://k3d.io/v5.5.1/
 
@@ -64,7 +64,7 @@ Run the below commads:
     kubectl get nodes
     kubectl cluster-info
 
-# Install Brew:
+# 5. Install Brew:
 Reference Documentation is as below:
 https://linux.how2shout.com/install-brew-on-ubuntu-22-04-lts-jammy-linux/
 
@@ -74,17 +74,17 @@ https://linux.how2shout.com/install-brew-on-ubuntu-22-04-lts-jammy-linux/
     (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/bhoopesh/.bashrc
     brew --help
 
-# Install Kubectl:
+# 6. Install Kubectl:
     brew install kubectl
     kubectl version --client
     
-# Run one test pod in default namespace
+# 7. Run one test pod in default namespace
     kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
 
-# Install Helm:
+# 8. Install Helm:
 brew install helm
 
-# Just in case if you want to delete the minikube k3d cluster completely
+# 9. Just in case if you want to delete the minikube k3d cluster completely
     k3d cluster delete mycluster
     k3d cluster delete -a
 
