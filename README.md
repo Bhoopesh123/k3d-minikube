@@ -54,7 +54,7 @@ Exit the ubuntu app machine and come back
 Reference Documentation is as below:
 https://k3d.io/v5.5.1/
 
-Run the below commads:
+Run the below commads:  
     wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
     curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
