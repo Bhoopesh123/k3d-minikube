@@ -28,25 +28,27 @@ Below Steps needs to be followed:
     sudo apt-get update  
     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin  
 
-E: Package 'docker-ce' has no installation candidate
-E: Unable to locate package docker-ce-cli
-E: Unable to locate package containerd.io
-E: Couldn't find any package by glob 'containerd.io'
-E: Couldn't find any package by regex 'containerd.io'
+If we get any of the below error:
 
-https://stackoverflow.com/questions/71393595/installing-docker-in-ubuntu-from-repo-cant-find-a-repo
-sudo apt-get install \
-     ca-certificates \
-     curl \
-     gnupg \
-     lsb-release
+    E: Package 'docker-ce' has no installation candidate
+    E: Unable to locate package docker-ce-cli
+ 
+ follow the below steps to resolve it
 
-https://docs.docker.com/engine/install/ubuntu/
+    sudo apt-get install \
+        ca-certificates \
+        curl \
+        gnupg \
+        lsb-release
+    sudo apt-get update  
+    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin 
 
-sudo usermod -aG docker ${USER}
-sudo chown root:docker /var/run/docker.sock
+Follow the below steps to add your userid to docker group
 
-exit the ubuntu machine and come back
+    sudo usermod -aG docker ${USER}
+    sudo chown root:docker /var/run/docker.sock
+
+Exit the ubuntu app machine and come back
 
 # install k3d on ubuntu 22.04:
 https://k3d.io/v5.5.1/
