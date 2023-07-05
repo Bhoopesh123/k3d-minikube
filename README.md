@@ -1,9 +1,10 @@
 # k3d-minikube
-k3d minikube cluster
+Below Steps will help to create a k3d minikube cluster on a windows machine.
 
 # Install and configure Ubuntu:
-## Open powershell with Admin:
-wsl --install
+Open powershell with Admin:  
+
+    wsl --install
 
 # Install Ubuntu App from Microsoft Store:
 
