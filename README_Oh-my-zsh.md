@@ -69,7 +69,7 @@ On Windows, it can be installed via choco: (Choose this option if you have ubunt
         eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
         brew doctor
 
-# 6. Kubectx
+# 6. Kubectx 
 What are kubectx and kubens ?  
 kubectx is a tool to switch between contexts (clusters) on kubectl faster.  
 kubens is a tool to switch between Kubernetes namespaces (and configure them for kubectl) easily
