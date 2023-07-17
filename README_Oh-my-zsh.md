@@ -58,6 +58,17 @@ On Windows, it can be installed via choco: (Choose this option if you have ubunt
     Add the below line at the end and save it
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+    If your system does not have brew software then install it from below location:
+    https://linux.how2shout.com/how-to-install-brew-ubuntu-20-04-lts-linux/  
+
+        sudo apt update
+        sudo apt-get install build-essential
+        sudo apt install git -y
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/$USER/.bashrc
+        eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+        brew doctor
+
 # 6. Kubectx
 What are kubectx and kubens ?
 kubectx is a tool to switch between contexts (clusters) on kubectl faster.
