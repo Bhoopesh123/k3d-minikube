@@ -3,6 +3,7 @@ Below Steps will help to modify and beautify the terminal so that work becomes e
 
 # 1. Install zsh on Ubuntu Box
 Open ubuntu Terminal and run the below comamnds:  
+
     sudo apt-get update
     sudo apt-get install zsh
     zsh --version
@@ -10,19 +11,19 @@ Open ubuntu Terminal and run the below comamnds:
 
 # 2. Install oh-my-zsh-in-ubuntu
 Open ubuntu Terminal and run the below comamnds:  
+
     sudo apt install curl wget git
-    
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     OR
     sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 OH-MY-ZSH Plugins:  
+
     git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
     nano ~/.zshrc
     plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
     source ~/.zshrc
-
 
 # 3. Customize your zsh 
 Install PowerLevel9k!:
@@ -62,14 +63,14 @@ What are kubectx and kubens ?
 kubectx is a tool to switch between contexts (clusters) on kubectl faster.
 kubens is a tool to switch between Kubernetes namespaces (and configure them for kubectl) easily
 
-Reference Documenation: https://github.com/ahmetb/kubectx
+Reference Documenation: https://github.com/ahmetb/kubectx  
 If you use Homebrew you can install like this:  
 
     brew install kubectx
 
 # 7. Kubecolor
 Colorize your kubectl output
-Reference Documenation: https://github.com/hidetatz/kubecolor
+Reference Documenation: https://github.com/hidetatz/kubecolor  
 If you use Homebrew you can install like this:  
 
     brew install hidetatz/tap/kubecolor
