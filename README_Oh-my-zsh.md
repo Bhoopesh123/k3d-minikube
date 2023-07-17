@@ -70,8 +70,8 @@ On Windows, it can be installed via choco: (Choose this option if you have ubunt
         brew doctor
 
 # 6. Kubectx
-What are kubectx and kubens ?
-kubectx is a tool to switch between contexts (clusters) on kubectl faster.
+What are kubectx and kubens ?  
+kubectx is a tool to switch between contexts (clusters) on kubectl faster.  
 kubens is a tool to switch between Kubernetes namespaces (and configure them for kubectl) easily
 
 Reference Documenation: https://github.com/ahmetb/kubectx  
@@ -80,7 +80,7 @@ If you use Homebrew you can install like this:
     brew install kubectx
 
 # 7. Kubecolor
-Colorize your kubectl output
+Colorize your kubectl output  
 Reference Documenation: https://github.com/hidetatz/kubecolor  
 If you use Homebrew you can install like this:  
 
